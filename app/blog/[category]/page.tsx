@@ -38,14 +38,22 @@ export default async function CategoryPage({ params }: Props) {
       <SiteHeader />
       <main>
         <div className="site-wrapper">
-          <div className="page-header">
-            <h1>&gt; {cat.label.toUpperCase()}</h1>
-            <p>
-              RSS feed:{" "}
-              <Link href={cat.rssPath} style={{ color: "var(--accent)" }}>
-                {cat.rssPath}
-              </Link>
-            </p>
+          <div className="page-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "1rem" }}>
+            <div>
+              <h1>&gt; {cat.label.toUpperCase()}</h1>
+              <p>Curated news and writing on {cat.label.toLowerCase()}.</p>
+            </div>
+            <a
+              href={cat.rssPath}
+              className="rss-btn"
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <circle cx="6.18" cy="17.82" r="2.18"/>
+                <path d="M4 11a9 9 0 0 1 9 9"/>
+                <path d="M4 4a16 16 0 0 1 16 16"/>
+              </svg>
+              RSS
+            </a>
           </div>
 
           {posts.length === 0 ? (

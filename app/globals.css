@@ -592,6 +592,28 @@ main {
 .text-muted { color: var(--fg-muted); }
 .text-accent { color: var(--accent); }
 
+/* ─── RSS Button ─── */
+.rss-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.65rem;
+  transition: border-color 0.15s, color 0.15s;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.rss-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
 /* ─── Responsive ─── */
 @media (max-width: 600px) {
   .site-header__wordmark {
