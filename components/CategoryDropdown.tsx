@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/categories";
 
@@ -8,57 +8,71 @@ export default function CategoryDropdown() {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
+  const handleToggle = useCallback(() => {
+    setOpen((v) => !v);
+  }, []);
+
+  const handleSelect = useCallback(() => {
+    setOpen(false);
+  }, []);
+
   useEffect(() => {
-    function handleClick(e: MouseEvent) {
+    if (!open) return;
+
+    function handlePointerDown(e: PointerEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         setOpen(false);
       }
     }
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
-  }, []);
 
-  useEffect(() => {
     function handleKey(e: KeyboardEvent) {
       if (e.key === "Escape") setOpen(false);
     }
+
+    document.addEventListener("pointerdown", handlePointerDown);
     document.addEventListener("keydown", handleKey);
-    return () => document.removeEventListener("keydown", handleKey);
-  }, []);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKey);
+    };
+  }, [open]);
 
   return (
     <div className="cat-dropdown" ref={ref}>
       <button
-        className="cat-dropdown__trigger"
-        onClick={() => setOpen((v) => !v)}
+        className={`cat-dropdown__trigger${open ? " open" : ""}`}
+        onClick={handleToggle}
         aria-expanded={open}
         aria-haspopup="true"
+        type="button"
       >
-        [ SELECT CATEGORY ] &gt;
+        [ SELECT CATEGORY ] {open ? "^" : ">"}
       </button>
 
-      <div className={`cat-dropdown__menu${open ? " open" : ""}`} role="menu">
-        {CATEGORIES.map((cat) => (
-          <div key={cat.slug}>
-            <Link
-              href={`/blog/${cat.slug}`}
-              className="cat-dropdown__item"
-              role="menuitem"
-              onClick={() => setOpen(false)}
-            >
-              &gt; {cat.label}
-            </Link>
-            <Link
-              href={cat.rssPath}
-              className="cat-dropdown__item cat-dropdown__item--rss"
-              role="menuitem"
-              onClick={() => setOpen(false)}
-            >
-              {cat.rssPath.replace("/feed/", "").replace(".xml", "")} feed
-            </Link>
-          </div>
-        ))}
-      </div>
+      {open && (
+        <div className="cat-dropdown__menu" role="menu">
+          {CATEGORIES.map((cat) => (
+            <div key={cat.slug}>
+              <Link
+                href={`/blog/${cat.slug}`}
+                className="cat-dropdown__item"
+                role="menuitem"
+                onClick={handleSelect}
+              >
+                &gt; {cat.label}
+              </Link>
+              <Link
+                href={`/feed/${cat.slug}.xml`}
+                className="cat-dropdown__item cat-dropdown__item--rss"
+                role="menuitem"
+                onClick={handleSelect}
+              >
+                RSS: {cat.slug}
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RETRO_SPECT — Computer Vision in Retail</title>
+    <link>https://yourdomain.com</link>
+    <description>Curated Computer Vision in Retail news aggregated from trusted sources.</description>
+    <language>en</language>
+    <managingEditor>Johannes Davidsson</managingEditor>
+    <lastBuildDate>Thu, 26 Mar 2026 11:40:37 GMT</lastBuildDate>
+    <atom:link href="https://yourdomain.com/feed/computer-vision-in-retail.xml" rel="self" type="application/rss+xml"/>
+    
+  </channel>
+</rss>

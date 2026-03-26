@@ -2,6 +2,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import NewsReel from "@/components/NewsReel";
 import { getPostsByCategory, CATEGORIES, type Category } from "@/lib/posts";
 
 interface Props {
@@ -44,7 +45,7 @@ export default async function CategoryPage({ params }: Props) {
               <p>Curated news and writing on {cat.label.toLowerCase()}.</p>
             </div>
             <a
-              href={cat.rssPath}
+              href={`/feed/${category}.xml`}
               className="rss-btn"
             >
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -55,6 +56,8 @@ export default async function CategoryPage({ params }: Props) {
               RSS
             </a>
           </div>
+
+          <NewsReel category={category as Category} />
 
           {posts.length === 0 ? (
             <p style={{ fontSize: "0.85rem", color: "var(--fg-muted)", fontStyle: "italic" }}>

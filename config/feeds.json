@@ -1,0 +1,37 @@
+{
+  "retail": {
+    "label": "Retail",
+    "sources": [
+      "https://www.theverge.com/rss/index.xml",
+      "https://feeds.feedburner.com/ConsultingNews"
+    ]
+  },
+  "robotics": {
+    "label": "Robotics",
+    "sources": [
+      "https://www.therobotreport.com/feed/",
+      "https://news.developer.nvidia.com/rss"
+    ]
+  },
+  "ai": {
+    "label": "AI",
+    "sources": [
+      "https://www.theverge.com/rss/index.xml",
+      "https://feeds.arstechnica.com/arstechnica/index"
+    ]
+  },
+  "spatial-computing": {
+    "label": "Spatial Computing",
+    "sources": [
+      "https://www.roadtovr.com/feed/",
+      "https://uploadvr.com/feed/"
+    ]
+  },
+  "computer-vision-retail": {
+    "label": "Computer Vision in Retail",
+    "sources": [
+      "https://www.therobotreport.com/feed/",
+      "https://feeds.arstechnica.com/arstechnica/index"
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RETRO_SPECT — Robotics</title>
+    <link>https://yourdomain.com</link>
+    <description>Curated Robotics news aggregated from trusted sources.</description>
+    <language>en</language>
+    <managingEditor>Johannes Davidsson</managingEditor>
+    <lastBuildDate>Thu, 26 Mar 2026 11:40:32 GMT</lastBuildDate>
+    <atom:link href="https://yourdomain.com/feed/robotics.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/5-new-digital-twin-products-developers-can-use-to-build-6g-networks/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=113018</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Wed, 25 Mar 2026 23:15:33 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[3 robotics trends from NVIDIA GTC 2026]]></title>
+      <link>https://www.therobotreport.com/3-robotics-trends-from-nvidia-gtc-2026/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[Our reporter shares major AI and robotics takeaways from speakers and exhibitors at NVIDIA's GTC event in San Jose last week. The post 3 robotics trends from NVIDIA GTC 2026 appeared first on The Robot Report .]]></description>
+      <pubDate>Wed, 25 Mar 2026 20:27:33 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[Unitree IPO shows a real hardware business, but the humanoid case is still early]]></title>
+      <link>https://www.therobotreport.com/unitree-ipo-shows-a-real-hardware-business-the-humanoid-case-is-still-early/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[While Unitree IPO is growing as a credible hardware business, industrial humanoid robots have a ways to go, says one roboticist. The post Unitree IPO shows a real hardware business, but the humanoid case is still early appeared first on The Robot Report .]]></description>
+      <pubDate>Wed, 25 Mar 2026 19:13:48 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/maximize-ai-infrastructure-throughput-by-consolidating-underutilized-gpu-workloads/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114752</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Wed, 25 Mar 2026 16:36:00 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/how-centralized-radar-processing-on-nvidia-drive-enables-safer-smarter-level-4-autonomy/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114855</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Wed, 25 Mar 2026 16:22:58 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[Basler and Orbbec partner for 3D vision systems for mobile robots]]></title>
+      <link>https://www.therobotreport.com/basler-orbbec-partner-3d-vision-systems-mobile-robots/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[Orbbec and Basler unveiled at LogiMAT the Stereo mini, which combines 3D cameras and computer vision for logistics and other applications. The post Basler and Orbbec partner for 3D vision systems for mobile robots appeared first on The Robot Report .]]></description>
+      <pubDate>Wed, 25 Mar 2026 13:01:30 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[Lucid Bots raises Series B funding as operator network hits $75M in revenue]]></title>
+      <link>https://www.therobotreport.com/lucid-bots-raises-20m-series-b-operator-network-hits-75m-revenue/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[Lucid Bots has raised a total of $34 million, as its drones collect data helping its owner-operators clean more consistently. The post Lucid Bots raises Series B funding as operator network hits $75M in revenue appeared first on The Robot Report .]]></description>
+      <pubDate>Wed, 25 Mar 2026 13:00:30 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[NORD Drivesystems to show modular systems for intelligent automation at MODEX]]></title>
+      <link>https://www.therobotreport.com/nord-drivesystems-to-show-modular-systems-for-intelligent-automation-at-modex/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[NORD says its modular product portfolio offers high configurability for compact, efficient, and reliable drive systems engineered to individual application needs. The post NORD Drivesystems to show modular systems for intelligent automation at MODEX appeared first on The Robot Report .]]></description>
+      <pubDate>Wed, 25 Mar 2026 12:30:50 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[Amazon acquires humanoid developer Fauna Robotics]]></title>
+      <link>https://www.therobotreport.com/amazon-acquires-humanoid-developer-fauna-robotics/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[Amazon said it's taking a 'well thought-out and measured approach' to understanding how personal robots could improve their customers' lives. The post Amazon acquires humanoid developer Fauna Robotics appeared first on The Robot Report .]]></description>
+      <pubDate>Tue, 24 Mar 2026 22:22:11 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/building-a-zero-trust-architecture-for-confidential-ai-factories/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114591</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Tue, 24 Mar 2026 20:56:36 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/scaling-token-factory-revenue-and-ai-efficiency-by-maximizing-performance-per-watt/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114827</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Tue, 24 Mar 2026 20:13:04 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/how-to-build-deep-agents-for-enterprise-search-with-nvidia-ai-q-and-langchain/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114078</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Tue, 24 Mar 2026 18:53:02 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[Russ Tedrake to unveil stealth AI startup at Robotics Summit]]></title>
+      <link>https://www.therobotreport.com/russ-tedrake-to-unveil-stealth-ai-startup-at-robotics-summit/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[At the Robotics Summit, MIT's Tedrake will share his vision for how physical AI can unlock more capable, adaptable robots across industries. The post Russ Tedrake to unveil stealth AI startup at Robotics Summit appeared first on The Robot Report .]]></description>
+      <pubDate>Tue, 24 Mar 2026 18:50:34 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/designing-protein-binders-using-the-generative-model-proteina-complexa/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114669</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Tue, 24 Mar 2026 16:47:53 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[TI partners with NVIDIA to accelerate robot deployments]]></title>
+      <link>https://www.therobotreport.com/ti-partners-with-nvidia-to-accelerate-robot-deployments/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[TI connects NVIDIA physical AI compute to real-world applications with deterministic control, sensing, power, and safety at every joint. The post TI partners with NVIDIA to accelerate robot deployments appeared first on The Robot Report .]]></description>
+      <pubDate>Tue, 24 Mar 2026 15:52:49 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[FANUC America to invest $90M in U.S. robot manufacturing]]></title>
+      <link>https://www.therobotreport.com/fanuc-america-invests-90m-u-s-robot-manufacturing/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[FANUC America said it will have hired more than 700 U.S. workers since 2019 to build its industrial automation. The post FANUC America to invest $90M in U.S. robot manufacturing appeared first on The Robot Report .]]></description>
+      <pubDate>Tue, 24 Mar 2026 12:54:25 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/building-nvidia-nemotron-3-agents-for-reasoning-multimodal-rag-voice-and-safety/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=114720</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Mon, 23 Mar 2026 22:06:08 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/nvidia-igx-thor-powers-industrial-medical-and-robotics-edge-ai-applications/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=112736</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Mon, 23 Mar 2026 20:30:47 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[Vention releases Rapid Operator AI to automate deep bin picking]]></title>
+      <link>https://www.therobotreport.com/vention-releases-rapid-operator-ai-automate-deep-bin-picking/</link>
+      <guid isPermaLink="false">[object Object]</guid>
+      <description><![CDATA[With Rapid Operator AI, Vention is targeting midmarket and enterprise manufacturers operating multi-shift facilities. The post Vention releases Rapid Operator AI to automate deep bin picking appeared first on The Robot Report .]]></description>
+      <pubDate>Mon, 23 Mar 2026 19:44:02 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+    <item>
+      <title><![CDATA[[object Object]]]></title>
+      <link>https://developer.nvidia.com/blog/inside-the-nvidia-rubin-platform-six-new-chips-one-ai-supercomputer/</link>
+      <guid isPermaLink="false">https://developer.nvidia.com/blog/?p=111036</guid>
+      <description><![CDATA[[object Object]]]></description>
+      <pubDate>Mon, 23 Mar 2026 16:19:08 GMT</pubDate>
+      <author>Johannes Davidsson</author>
+      <category>Robotics</category>
+    </item>
+  </channel>
+</rss>

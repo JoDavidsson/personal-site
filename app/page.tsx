@@ -2,6 +2,7 @@ import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import Link from "next/link";
 import TopicPills from "@/components/TopicPills";
+import NewsReel from "@/components/NewsReel";
 import { getAllPosts, CATEGORIES } from "@/lib/posts";
 
 export default function HomePage() {
@@ -70,6 +71,9 @@ export default function HomePage() {
             </p>
             <TopicPills />
           </section>
+
+          {/* Curated News Reel */}
+          <NewsReel />
 
           {/* Recent Posts */}
           <section>
