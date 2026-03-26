@@ -41,7 +41,7 @@ export default function SiteHeader() {
             &gt; CONTACT
           </Link>
 
-          <div style={{ marginLeft: "auto" }}>
+          <div className="cat-dropdown-wrapper" style={{ marginLeft: "auto" }}>
             <CategoryDropdown />
           </div>
         </nav>
