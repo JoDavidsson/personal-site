@@ -1,65 +1,146 @@
-import Image from "next/image";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+import Link from "next/link";
+import TopicPills from "@/components/TopicPills";
+import { getAllPosts, CATEGORIES } from "@/lib/posts";
 
-export default function Home() {
+export default function HomePage() {
+  const allPosts = getAllPosts().slice(0, 5);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <SiteHeader />
+      <main>
+        <div className="site-wrapper">
+          {/* Hero */}
+          <section style={{ padding: "4rem 0 3rem" }}>
+            <p
+              style={{
+                fontSize: "0.75rem",
+                color: "var(--fg-muted)",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                marginBottom: "1rem",
+              }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              // SYSTEM ONLINE
+            </p>
+            <h1
+              style={{
+                fontSize: "1.75rem",
+                fontWeight: 700,
+                lineHeight: 1.2,
+                letterSpacing: "-0.02em",
+                marginBottom: "1.25rem",
+              }}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+              Observations on the intersection of
+              <br />
+              retail, machines, and intelligence.
+            </h1>
+            <p
+              style={{
+                fontSize: "0.875rem",
+                color: "var(--fg-muted)",
+                maxWidth: "540px",
+                lineHeight: 1.7,
+              }}
+            >
+              I write about computer vision in brick-and-mortar retail,
+              autonomous robotics in logistics, spatial computing interfaces,
+              and the AI systems reshaping how things are sold and moved.
+              Occasional detours into whatever caught my attention.
+            </p>
+          </section>
+
+          {/* Category Overview */}
+          <section style={{ marginBottom: "3rem" }}>
+            <p
+              style={{
+                fontSize: "0.7rem",
+                color: "var(--fg-muted)",
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: "1rem",
+                paddingBottom: "0.5rem",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              // TOPICS
+            </p>
+            <TopicPills />
+          </section>
+
+          {/* Recent Posts */}
+          <section>
+            <p
+              style={{
+                fontSize: "0.7rem",
+                color: "var(--fg-muted)",
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+                marginBottom: "1rem",
+                paddingBottom: "0.5rem",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              // RECENT_POSTS
+            </p>
+
+            {allPosts.length === 0 ? (
+              <p
+                style={{
+                  fontSize: "0.85rem",
+                  color: "var(--fg-muted)",
+                  fontStyle: "italic",
+                  padding: "2rem 0",
+                }}
+              >
+                No posts yet. Check back soon.
+              </p>
+            ) : (
+              <ul className="post-list">
+                {allPosts.map((post) => (
+                  <li key={`${post.category}-${post.slug}`} className="post-list__item">
+                    <div className="post-list__meta">
+                      <span className="post-list__category">
+                        {CATEGORIES.find((c) => c.slug === post.category)?.label}
+                      </span>
+                      <span>{post.date}</span>
+                    </div>
+                    <Link
+                      href={`/blog/${post.category}/${post.slug}`}
+                      className="post-list__title"
+                    >
+                      {post.title}
+                    </Link>
+                    <p className="post-list__excerpt">{post.excerpt}</p>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <div style={{ textAlign: "center", padding: "2rem 0" }}>
+              <Link
+                href="/blog"
+                style={{
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  color: "var(--fg-muted)",
+                  border: "1px solid var(--border)",
+                  padding: "0.5rem 1.25rem",
+                  display: "inline-block",
+                  transition: "border-color 0.15s, color 0.15s",
+                }}
+              >
+                [ VIEW ALL POSTS &gt; ]
+              </Link>
+            </div>
+          </section>
         </div>
       </main>
-    </div>
+      <SiteFooter />
+    </>
   );
 }
